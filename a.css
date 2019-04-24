@@ -105,20 +105,19 @@
 }
 
 .hadron {
-	color: #ffffff;
+	color: #000000;
 	animation: hadronize 1.5s linear infinite;
 	border: 2px solid #1f1f1f;
-	background: radial-gradient(transparent, #000000), repeating-linear-gradient(#990000, #009900, #000099, #990000);
 	background-size: 100% 200%;
 	font-family: Typewriter;
 	font-weight: bold;
 	border-radius: 4px;
-	transition-duration: 0.2s;
+	transition-duration: 0.5s;
 	cursor: pointer;
 }
 
 .hadron:hover {
-	color: #000000;
+	color: #FFFFFF;
 	animation: hadronize 1.5s linear infinite;
 	border: 2px solid #bfbfbf;
 	text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
