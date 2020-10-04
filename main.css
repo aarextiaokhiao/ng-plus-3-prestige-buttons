@@ -19,6 +19,12 @@ h2 {
 	font-weight: bold;
 	margin: 0
 }
+h3 {
+	font-family: Typewriter;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0
+}
 
 .normal {
     background: #F2F2F2;

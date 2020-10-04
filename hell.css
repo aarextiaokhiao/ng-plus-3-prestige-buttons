@@ -56,3 +56,23 @@
 		background-position: 600% 0%
 	}
 }
+
+.interreality {
+	background: linear-gradient(90deg, #007f00, #000000, #003f7f);
+	border: 2px solid;
+	border-color: #007f00 #003f7f #003f7f #007f00;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 12px 0px #000000;
+	color: #ffffff;
+	text-shadow: 0px 0px 3px #ffffff, 0px 0px 6px #ffffff;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	cursor: pointer
+}
+
+.interreality:hover {
+	border-color: #00bf00 #005fbf #005fbf #00bf00;
+	box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.5);
+	text-shadow: 0px 0px 6px #ffffff, 0px 0px 12px #ffffff;
+}
