@@ -95,36 +95,41 @@
 }
 
 .hadron {
-	position: relative;
-	background: linear-gradient(#ff0000, transparent, #ffff00), linear-gradient(90deg, #00ff00, #ff0000, #0000ff);
-	background-size: 200% 200%;
-	box-shadow: inset 0px 0px 24px 0px black;
-	border: 2px solid black;
-	border-radius: 4px;
-	overflow: hidden;
+	background: linear-gradient(transparent, black 25%, black 75%, transparent), linear-gradient(90deg, #ff0000, #00ff00 33.3%, #0000ff 66.7%, #ff0000 100%);
+	background-size: 200% 100%;
+	border: 2px solid rgba(0, 0, 0, 0.25);
 	font-family: Typewriter;
 	font-weight: bold;
-	color: rgba(255,255,255,0.8);
-	text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	border-radius: 4px;
 	transition-duration: 0.2s;
-	animation: hadron 5s ease infinite;
-	cursor: pointer
+	cursor: pointer;
+	text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
+	animation: hadron 6s linear infinite
 }
 .hadron:hover {
+	border: 2px solid rgba(255, 255, 255, 0.5);
 	box-shadow: inset 0px 0px 24px 0px white;
-	border-color: #bfbfbf;
-	color: white;
-	text-shadow: 0px 0px 3px white
 }
 @keyframes hadron { 
 	0%{
-		background-position: 0% 0%
+		background-position: 0% 0%;
+		color: #efffef;
+		text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
 	}
-	33% {
-		background-position: 100% 50%
+	33.3% {
+		background-position: 133.3% 0%;
+		color: #efefff;
+		text-shadow: 1px 0px 0px #ff0000, -1px 0px 0px #00ff00, 0px 0px 0px #0000ff;
 	}
-	67% {
-		background-position: 0% 50%
+	66.7% {
+		background-position: 266.7% 0%;
+		color: #ffefef;
+		text-shadow: 0px 0px 0px #ff0000, 1px 0px 0px #00ff00, -1px 0px 0px #0000ff;
+	}
+	100% {
+		background-position: 400% 0%;
+		color: #efffef;
+		text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
 	}
 }
 
