@@ -62,6 +62,37 @@
 	cursor: pointer
 }
 
+.radiant {
+	background: linear-gradient(90deg, #3fff00, #7fff00 50%, #3fff00 100%);
+	background-size: 200%;
+	border: 2px solid;
+	border-radius: 4px;
+	font-weight: bold;
+	text-shadow: 0px 0px 3px #5fff00, 0px 0px 6px #2f7f00;
+	color: #d7ffbf;
+	transition-duration: 0.2s;
+	animation: radiant 4s ease-in-out infinite;
+	cursor: pointer
+}
+.radiant:hover {
+	box-shadow: inset 0px 0px 6px #afff7f, 0px 0px 6px #5fff00;
+	text-shadow: 0px 0px 3px #afff7f, 0px 0px 6px #5fff00
+}
+@keyframes radiant {
+	0% {
+		background-position: 0% 0%;
+		border-color: rgba(0, 0, 0, 0.25)
+	}
+	50% {
+		background-position: 100% 0%;
+		border-color: rgba(63, 127, 0, 0.25)
+	}
+	100% {
+		background-position: 0% 0%;
+		border-color: rgba(0, 0, 0, 0.25)
+	}
+}
+
 .thepogity {
 	background: linear-gradient(90deg, #bf7fff, transparent, #bf7fff), radial-gradient(#ff7fff, #df7fff, #000000);
 	border: 2px solid rgba(95, 0, 127, 0.25);
