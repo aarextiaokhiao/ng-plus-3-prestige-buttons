@@ -93,6 +93,21 @@
 	}
 }
 
+.singularity {
+    background: black;
+    border: 2px solid #7f7f7f;
+	border-radius: 4px;
+    color: #bfbfbf;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	cursor: pointer
+}
+.singularity:hover {
+    color: #1f1f1f;
+    background: white;
+}
+
 .thepogity {
 	background: linear-gradient(90deg, #bf7fff, transparent, #bf7fff), radial-gradient(#ff7fff, #df7fff, #000000);
 	border: 2px solid rgba(95, 0, 127, 0.25);
