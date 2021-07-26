@@ -41,7 +41,7 @@
 	color: #0a640a;
 }
 
-.planck {
+.deco {
 	background: linear-gradient(#000000, transparent, #000000), linear-gradient(90deg, #003f2f, #002f3f);
 	background-size: 50% 50%;
 	border: 2px solid #003f2f;
@@ -50,15 +50,15 @@
 	font-family: Typewriter;
 	font-weight: bold;
 	transition-duration: 0.2s;
-	animation: planck 4s linear infinite
+	animation: deco 4s linear infinite
 }
-.planck:hover {
+.deco:hover {
 	background-size: 50% 200%;
 	box-shadow: inset 0px 0px 24px 0px #00ffff;
 	border-color: #7fffff;
 	cursor: pointer
 }
-@keyframes planck { 
+@keyframes deco { 
 	0% {
 		color: #00ffbf;
 		text-shadow: 2px 2px 3px #00ffbf, -2px -2px 3px #00ffbf;
@@ -111,6 +111,28 @@
 		color: #e0ace5;
 		text-shadow: 0px 0px 3px white, 0px 0px 6px #d200e5;
 	}
+}
+
+/*SCRAPPED*/
+.planck {
+	background: linear-gradient(#000000, #2f3f00, #000000);
+	background-size: 50% 50%;
+	border: 2px solid #2f3f00;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 12px 0px #2f3f00;
+	font-family: Typewriter;
+	font-weight: bold;
+	color: #bfff00;
+	text-shadow: 0px 0px 3px #bfff00, 0px 0px 0px transparent;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.planck:hover {
+	background-size: 50% 200%;
+	box-shadow: inset 0px 0px 24px 0px #5f7f00;
+	border-color: #5f7f00;
+	color: #efffbf;
+	text-shadow: 0px 0px 3px #bfff00, 0px 0px 6px #bfff00;
 }
 
 .hadron {
@@ -347,4 +369,227 @@
 .metempric:hover {
 	color: #ffffff;
 	text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff
+}
+
+/*SCRAPPED: OLD*/
+.ethereal {
+	background: repeating-linear-gradient(#002fbf, transparent 50%, #002fbf 100%), repeating-linear-gradient(90deg, transparent, #3f6fff 50%, transparent 100%), #7f9fff;
+	background-size: 200% 200%;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	color: #003fff;
+	font-family: Typewriter;
+	font-weight: bold;
+	--ts: 0px 0px 0px #003fff;
+	animation: ethereal 5s linear infinite;
+	transition-duration: 0.2s;
+	cursor: pointer
+}
+.ethereal:hover {
+	border-color: #7f9fff;
+	box-shadow: inset 0px 0px 12px 0px white;
+	--ts: 0px 0px 12px #003fff
+}
+@keyframes ethereal { 
+	0%{
+		background-position: 0% 0%;
+		text-shadow: 0px 0px 3px #003fff, var(--ts), 0px 0px 3px black, 0px 0px 6px #003fff
+	}
+	50%{
+		background-position: 100% 100%;
+		text-shadow: 0px 0px 3px #003fff, var(--ts), 0px 0px 3px #003fff, 0px 0px 6px white
+	}
+	100%{
+		background-position: 200% 200%;
+		text-shadow: 0px 0px 3px #003fff, var(--ts), 0px 0px 3px black, 0px 0px 6px #003fff
+	}
+}
+
+.meta {
+	color: #ffffff;
+	text-shadow: 0px 0px 3px #000000;
+	background: radial-gradient(transparent, #ffffff),  linear-gradient(#cccc00, #00cccc 33%, #cc00cc 66%, #cccc00 100%);
+	border: 2px solid #ffffff;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	animation: meta 3s linear infinite;
+	background-size: 100% 300%;
+	transition-duration: 0.2s
+}
+.meta:hover {
+	text-shadow: 0px 0px 6px #000000;
+	cursor: pointer;
+}
+@keyframes meta { 
+	0%{
+	    background-position: 0% 0%, 0% 0%;
+	}
+	100%{
+	    background-position: 0% 0%, 300% 300%;
+	}
+}
+
+.unknown {
+	background: #fcfcfc;
+	color: #fcfcfc;
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.unknown:hover {
+	background: #000000;
+	color: #7f7f7f;
+	text-shadow: 0px 0px 3px #3f3f3f;
+	border-color: #000000;
+	cursor: pointer;
+}
+
+.virtualize {
+	color: #000000;
+	text-shadow: 0px 0px 3px #ffffff;
+	background: linear-gradient(#000000, transparent 50%, #000000 100%), radial-gradient(circle, #ffffff, #3f9fff 50%, #000000 100%);
+	border: 2px solid transparent;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.virtualize:hover {
+	color: #ffffff;
+	text-shadow: 0px 0px 3px #000000;
+	cursor: pointer
+}
+
+.digitize {
+	color: #00ff00;
+	text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+	background: url("images/digitize.png");
+	border: 2px solid #000000;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	animation: digitize 3s linear infinite;
+	transition-duration: 0.2s
+}
+.digitize:hover {
+	color: #000000;
+	text-shadow: 0px 0px 6px #00ff00, 0px 0px 6px #00ff00, 0px 0px 6px #00ff00, 0px 0px 6px #00ff00, 0px 0px 6px #00ff00, 0px 0px 6px #00ff00;
+	cursor: pointer
+}
+@keyframes digitize { 
+	0%{
+	    background-position: 0 0;
+	}
+	100%{
+	    background-position: -20px -40px;
+	}
+}
+
+.infinitize {
+	color: #ffffff;
+	text-shadow: 0px 0px 3px #ffffff;
+	background: radial-gradient(circle, #ffffff, #000000 75%, #e59900 100%);
+	border: 2px solid #000000;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.infinitize:hover {
+	color: #000000;
+	text-shadow: 0px 0px 6px #e59900, 0px 0px 6px #e59900, 0px 0px 6px #e59900, 0px 0px 6px #e59900, 0px 0px 6px #e59900, 0px 0px 6px #e59900;
+	cursor: pointer
+}
+
+.timeless {
+	border: 2px solid #000000;
+	box-shadow: inset 0px 0px 12px 0px #ffffff;
+	color: #001966;
+	text-shadow: 0px 0px 3px #ffffff, 0px 0px 6px #ffffff;
+	background: radial-gradient(circle, #7f7f7f, #000000 25%, transparent 50%), linear-gradient(#ffffff, transparent 33%, transparent 67%, #ffffff 100%), linear-gradient(90deg, #e59900 0%, #b341e0 100%);
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.timeless:hover {
+	border-color: #0033cc;
+	box-shadow: inset 0px 0px 12px 0px #0033cc;
+	text-shadow: 0px 0px 3px #0033cc, 0px 0px 6px #0033cc;
+	cursor: pointer
+}
+
+.continuum {
+	border: 2px solid #3f00ff;
+	box-shadow: inset 0px 0px 12px 0px #7f00ff;
+	color: #3f00ff;
+	text-shadow: 0px 0px 6px #1f007f, 0px 0px 3px #1f007f;
+	background: linear-gradient(#00007f, #0000ff 50%, #00007f 100%);
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.continuum:hover {
+	box-shadow: inset 0px 0px 12px 0px #7f00ff;
+	text-shadow: 0px 0px 6px #9f7fff, 0px 0px 3px #9f7fff;
+	cursor: pointer
+}
+
+.omniscient {
+	color: #bfbf00;
+	text-shadow: 0px 0px 6px #bfbf00, 0px 0px 3px #bfbf00;
+	background: radial-gradient(circle, transparent, #000000 50%, #000000 100%), linear-gradient(#3f3f00, transparent 50%, #3f3f00 100%), linear-gradient(#3f3f00, #ffff00 50%, #3f3f00 100%);
+	font-weight: bold;
+    border: 2px solid #000000;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.omniscient:hover {
+	text-shadow: 0px 0px 6px #ffff00, 0px 0px 3px #ffffff;
+	cursor: pointer
+}
+
+.spiritual {
+	color: #ff3f00;
+	text-shadow: 0px 0px 6px #ff3f00, 0px 0px 3px #000000;
+	background: radial-gradient(transparent, #ff7f00), linear-gradient(#ff3f00, transparent 50%, #ff3f00 100%), linear-gradient(90deg, #ff0000, #ff7f00 50%, #ff0000 100%);
+	border: 2px solid #ff3f00;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	animation: spiritual 3s linear infinite;
+	background-size: 100% 300%;
+	transition-duration: 0.2s
+}
+.spiritual:hover {
+	color: #ff7f00;
+	text-shadow: 0px 0px 6px #ffbf7f, 0px 0px 3px #ffffff;
+	cursor: pointer
+}
+@keyframes spiritual { 
+	0%{
+	    background-position: 0 0;
+	}
+	100%{
+	    background-position: 300% 300%;
+	}
+}
+
+.enlighten {
+	border: 2px solid #bfbfbf;
+	box-shadow: inset 0px 0px 12px 0px #bfbfbf;
+	color: #ff7f7f;
+	text-shadow: 0px 0px 6px #ff7f7f, 0px 0px 3px #ff7f7f;
+	background: #ffffff;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s
+}
+.enlighten:hover {
+	color: #ff0000;
+	text-shadow: 0px 0px 6px #ff0000, 0px 0px 3px #ff00000;
+	cursor: pointer
 }
