@@ -108,6 +108,41 @@
     background: white;
 }
 
+.omnisity {
+	background: radial-gradient(#cfffbf, transparent), linear-gradient(90deg, #ffdf00, #00dfff, #ffdf00);
+	background-size: 200%;
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	border-radius: 4px;
+	color: #cfffbf;
+	text-shadow: 0px 0px 3px #9fff7f, 0px -6px 6px #3fff00, 0px 6px 6px #3fff00;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	animation: omnisity 4s ease-in-out infinite;
+}
+.omnisity:hover {
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	text-shadow: 0px 0px 3px #cfffbf, 0px -6px 12px #3fff00, 0px 6px 12px #3fff00;
+	cursor: pointer
+}
+@keyframes omnisity {
+	0% {
+		background-position: 0% 0%;
+		color: #cfffbf;
+		box-shadow: inset 0px 0px 0px white
+	}
+	50% {
+		background-position: 100% 0%;
+		color: #2fbf00;
+		box-shadow: inset 0px 0px 12px #9fff7f
+	}
+	100% {
+		background-position: 200% 0%;
+		color: #cfffbf;
+		box-shadow: inset 0px 0px 0px white
+	}
+}
+
 .thepogity {
 	background: linear-gradient(90deg, #bf7fff, transparent, #bf7fff), radial-gradient(#ff7fff, #df7fff, #000000);
 	border: 2px solid rgba(95, 0, 127, 0.25);
@@ -125,4 +160,33 @@
 	box-shadow: inset 0px 0px 12px 0px #7f00ff;
 	color: #df7fff;
 	text-shadow: 0px 0px 6px #000000, 0px 0px 12px #000000
+}
+
+.aarex {
+	background: linear-gradient(#dffbff, transparent, #dffbff), linear-gradient(90deg, #ffdf00, #00bfff, #00dfff);
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	background-size: 150% 10%;
+	background-position: 25% 0%;
+	color: #dffbff;
+	text-shadow: 0 0 3px #006f7f;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s;
+	animation: aarex 4s linear infinite;
+}
+.aarex:hover {
+	border-color: #00dfff;
+	box-shadow: inset 0px 0px 36px #00dfff;
+	color: #00bfff;
+	text-shadow: 0 0 3px #00bfff;
+	cursor: pointer;
+}
+@keyframes aarex {
+	0% {
+		background-position: 25% 0%;
+	}
+	10% {
+		background-position: 25% 100%;
+	}
 }
