@@ -41,47 +41,38 @@
 	color: #0a640a;
 }
 
-.deco {
-	background: linear-gradient(#000000, transparent, #000000), linear-gradient(90deg, #003f2f, #002f3f);
-	background-size: 50% 50%;
-	border: 2px solid #003f2f;
-	border-radius: 4px;
-	box-shadow: inset 0px 0px 12px 0px #003f2f;
+.fluc {
+	background: linear-gradient(#ff007f, transparent, #ff007f), linear-gradient(90deg, #ff00ff, #ff0000, #ffff00);
+	background-size: 100% 10%;
+	background-position: 0% 0%;
+
+	border: 2px solid #bf005f;
+	color: #ffbfdf;
 	font-family: Typewriter;
 	font-weight: bold;
+	border-radius: 4px;
 	transition-duration: 0.2s;
-	animation: deco 4s linear infinite
+	animation: fluc 4s linear infinite;
+    cursor: pointer;
 }
-.deco:hover {
-	background-size: 50% 200%;
-	box-shadow: inset 0px 0px 24px 0px #00ffff;
-	border-color: #7fffff;
-	cursor: pointer
+.fluc:hover {
+	background: linear-gradient(#ff007f, transparent, #ff007f), linear-gradient(90deg, #ff00ff, #ff0000, #ffff00);
+	background-size: 100% 10%;
+	background-position: 0% 0%;
+
+	border-color: #ff7fdf;
+	box-shadow: inset 0px 0px 36px #ff7fdf, inset 0px 0px 36px #ff7fdf
 }
-@keyframes deco { 
+@keyframes fluc {
 	0% {
-		color: #00ffbf;
-		text-shadow: 2px 2px 3px #00ffbf, -2px -2px 3px #00ffbf;
+		background-position: 25% 0%;
 	}
-	25% {
-		color: #7fffff;
-		text-shadow: 0px 0px 0px transparent, 0px 0px 0px transparent;
-	}
-	50% {
-		color: #00bfff;
-		text-shadow: -2px 2px 3px #00bfff, 2px -2px 3px #00bfff;
-	}
-	75% {
-		color: #7fffff;
-		text-shadow: 0px 0px 0px transparent, 0px 0px 0px transparent;
-	}
-	100%{
-		color: #00ffbf;
-		text-shadow: 2px 2px 3px #00ffbf, -2px -2px 3px #00ffbf;
+	100% {
+		background-position: 25% 100%;
 	}
 }
 
-.ghost {
+.funda {
 	background: linear-gradient(#0c0033, #2e0033);
 	box-shadow: inset 0px 0px 24px 0px black;
 	border: 2px solid;
@@ -89,13 +80,13 @@
 	font-weight: bold;
 	border-radius: 4px;
 	transition-duration: 0.2s;
-	animation: ghost 4s linear infinite
+	animation: funda 4s linear infinite
 }
-.ghost:hover {
+.funda:hover {
 	box-shadow: inset 0px 0px 12px 0px #420072;
 	cursor: pointer
 }
-@keyframes ghost { 
+@keyframes funda { 
 	0%{
 		border-color: #690072;
 		color: #e0ace5;
@@ -113,26 +104,24 @@
 	}
 }
 
-/*SCRAPPED*/
-.planck {
-	background: linear-gradient(#000000, #2f3f00, #000000);
-	background-size: 50% 50%;
-	border: 2px solid #2f3f00;
-	border-radius: 4px;
-	box-shadow: inset 0px 0px 12px 0px #2f3f00;
+.dark {
+	color: #7f7f7f;
+	text-shadow: 0px 0px 3px #3f3f3f, 0px 0px 3px #3f3f3f;
+	background: #000000;
+	box-shadow: inset 0px 0px 12px 0px #3f3f3f;
+	border: 2px solid #3f3f3f;
 	font-family: Typewriter;
 	font-weight: bold;
-	color: #bfff00;
-	text-shadow: 0px 0px 3px #bfff00, 0px 0px 0px transparent;
+	border-radius: 4px;
 	transition-duration: 0.2s;
 	cursor: pointer;
 }
-.planck:hover {
-	background-size: 50% 200%;
-	box-shadow: inset 0px 0px 24px 0px #5f7f00;
-	border-color: #5f7f00;
-	color: #efffbf;
-	text-shadow: 0px 0px 3px #bfff00, 0px 0px 6px #bfff00;
+.dark:hover {
+	background: #3f3f3f;
+	box-shadow: inset 0px 0px 12px 0px #000000;
+	border-color: #000000;
+	color: #bfbfbf;
+	text-shadow: 0px 0px 3px #7f7f7f, 0px 0px 3px #7f7f7f;
 }
 
 .hadron {
@@ -172,6 +161,43 @@
 		color: #efffef;
 		text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
 	}
+}
+
+.singularity {
+    background: black;
+    border: 2px solid #7f7f7f;
+	border-radius: 4px;
+    color: #bfbfbf;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	cursor: pointer
+}
+.singularity:hover {
+    color: #1f1f1f;
+    background: white;
+}
+
+/*SCRAPPED*/
+.planck {
+	background: linear-gradient(#000000, #2f3f00, #000000);
+	background-size: 50% 50%;
+	border: 2px solid #2f3f00;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 12px 0px #2f3f00;
+	font-family: Typewriter;
+	font-weight: bold;
+	color: #bfff00;
+	text-shadow: 0px 0px 3px #bfff00, 0px 0px 0px transparent;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.planck:hover {
+	background-size: 50% 200%;
+	box-shadow: inset 0px 0px 24px 0px #5f7f00;
+	border-color: #5f7f00;
+	color: #efffbf;
+	text-shadow: 0px 0px 3px #bfff00, 0px 0px 6px #bfff00;
 }
 
 .star {
@@ -333,26 +359,6 @@
 .beyond:hover {
 	border-color: #bfbfbf;
 	color: #5f5f5f
-}
-
-.abstract {
-	color: #7f7f7f;
-	text-shadow: 0px 0px 3px #3f3f3f, 0px 0px 3px #3f3f3f;
-	background: #000000;
-	box-shadow: inset 0px 0px 12px 0px #3f3f3f;
-	border: 2px solid #3f3f3f;
-	font-family: Typewriter;
-	font-weight: bold;
-	border-radius: 4px;
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-.abstract:hover {
-	background: #3f3f3f;
-	box-shadow: inset 0px 0px 12px 0px #000000;
-	border-color: #000000;
-	color: #bfbfbf;
-	text-shadow: 0px 0px 3px #7f7f7f, 0px 0px 3px #7f7f7f;
 }
 
 .metempric {
@@ -592,4 +598,44 @@
 	color: #ff0000;
 	text-shadow: 0px 0px 6px #ff0000, 0px 0px 3px #ff00000;
 	cursor: pointer
+}
+
+.deco {
+	background: linear-gradient(#000000, transparent, #000000), linear-gradient(90deg, #003f2f, #002f3f);
+	background-size: 50% 50%;
+	border: 2px solid #003f2f;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 12px 0px #003f2f;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	animation: deco 4s linear infinite
+}
+.deco:hover {
+	background-size: 50% 200%;
+	box-shadow: inset 0px 0px 24px 0px #00ffff;
+	border-color: #7fffff;
+	cursor: pointer
+}
+@keyframes deco { 
+	0% {
+		color: #00ffbf;
+		text-shadow: 2px 2px 3px #00ffbf, -2px -2px 3px #00ffbf;
+	}
+	25% {
+		color: #7fffff;
+		text-shadow: 0px 0px 0px transparent, 0px 0px 0px transparent;
+	}
+	50% {
+		color: #00bfff;
+		text-shadow: -2px 2px 3px #00bfff, 2px -2px 3px #00bfff;
+	}
+	75% {
+		color: #7fffff;
+		text-shadow: 0px 0px 0px transparent, 0px 0px 0px transparent;
+	}
+	100%{
+		color: #00ffbf;
+		text-shadow: 2px 2px 3px #00ffbf, -2px -2px 3px #00ffbf;
+	}
 }

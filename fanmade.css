@@ -93,21 +93,6 @@
 	}
 }
 
-.singularity {
-    background: black;
-    border: 2px solid #7f7f7f;
-	border-radius: 4px;
-    color: #bfbfbf;
-	font-family: Typewriter;
-	font-weight: bold;
-	transition-duration: 0.2s;
-	cursor: pointer
-}
-.singularity:hover {
-    color: #1f1f1f;
-    background: white;
-}
-
 .omnisity {
 	background: radial-gradient(#cfffbf, transparent), linear-gradient(90deg, #ffdf00, #00dfff, #ffdf00);
 	background-size: 200%;
