@@ -128,6 +128,23 @@
 	}
 }
 
+/* https://github.com/ItMarki/ng-plus-3-prestige-buttons/blob/nonexistent-layers/a.css */
+.metaize {
+	color: #000000;
+	background: radial-gradient(#727272, #BFBFBF);
+	font-weight: bold;
+	border: 2px solid #BFBFBF;
+	border-radius: 4px;
+	font-family: Typewriter;
+	font-weight: bold;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.metaize:hover {
+	color: #FFFFFF;
+	background: radial-gradient(#727272, #BFBFBF);
+}
+
 .thepogity {
 	background: linear-gradient(90deg, #bf7fff, transparent, #bf7fff), radial-gradient(#ff7fff, #df7fff, #000000);
 	border: 2px solid rgba(95, 0, 127, 0.25);
