@@ -104,28 +104,8 @@
 	}
 }
 
-.dark {
-	color: #7f7f7f;
-	text-shadow: 0px 0px 3px #3f3f3f, 0px 0px 3px #3f3f3f;
-	background: #000000;
-	box-shadow: inset 0px 0px 12px 0px #3f3f3f;
-	border: 2px solid #3f3f3f;
-	font-family: Typewriter;
-	font-weight: bold;
-	border-radius: 4px;
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-.dark:hover {
-	background: #3f3f3f;
-	box-shadow: inset 0px 0px 12px 0px #000000;
-	border-color: #000000;
-	color: #bfbfbf;
-	text-shadow: 0px 0px 3px #7f7f7f, 0px 0px 3px #7f7f7f;
-}
-
 .hadron {
-	background: linear-gradient(transparent, black 25%, black 75%, transparent), linear-gradient(90deg, #ff0000, #00ff00 33.3%, #0000ff 66.7%, #ff0000 100%);
+	background: linear-gradient(transparent, black 25%, black 75%, transparent), linear-gradient(90deg, #ff0, #0ff, #f0f, #ff0);
 	background-size: 200% 100%;
 	border: 2px solid rgba(0, 0, 0, 0.25);
 	font-family: Typewriter;
@@ -138,44 +118,52 @@
 }
 .hadron:hover {
 	border: 2px solid rgba(255, 255, 255, 0.5);
-	box-shadow: inset 0px 0px 24px 0px white;
+	box-shadow: inset 0px 0px 24px 0px black;
 }
 @keyframes hadron { 
 	0%{
-		background-position: 0% 0%;
-		color: #efffef;
-		text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
+		background-position: 0% 0;
+		color: #fbf;
+		text-shadow: -1px 0px 0px #f00, 0px 0px 0px #0f0, 1px 0px 0px #00f;
 	}
 	33.3% {
-		background-position: 133.3% 0%;
-		color: #efefff;
-		text-shadow: 1px 0px 0px #ff0000, -1px 0px 0px #00ff00, 0px 0px 0px #0000ff;
+		background-position: 66% 0;
+		color: #ffb;
+		text-shadow: 1px 0px 0px #f00, -1px 0px 0px #0f0, 0px 0px 0px #00f;
 	}
 	66.7% {
-		background-position: 266.7% 0%;
-		color: #ffefef;
-		text-shadow: 0px 0px 0px #ff0000, 1px 0px 0px #00ff00, -1px 0px 0px #0000ff;
+		background-position: 133% 0;
+		color: #bff;
+		text-shadow: 0px 0px 0px #f00, 1px 0px 0px #0f0, -1px 0px 0px #00f;
 	}
 	100% {
-		background-position: 400% 0%;
-		color: #efffef;
-		text-shadow: -1px 0px 0px #ff0000, 0px 0px 0px #00ff00, 1px 0px 0px #0000ff;
+		background-position: 200% 0;
+		color: #fbf;
+		text-shadow: -1px 0px 0px #f00, 0px 0px 0px #0f0, 1px 0px 0px #00f;
 	}
 }
 
 .singularity {
-    background: black;
-    border: 2px solid #7f7f7f;
+    background: linear-gradient(45deg, #333, #000, #000);
+    background-size: 50% 100%;
+    background-position: 0 0;
+
+    border: 2px solid #333;
 	border-radius: 4px;
-    color: #bfbfbf;
+	box-shadow: inset 0 0 0 white;
+
+    color: #777;
+    text-shadow: 0 0 3px #777;
+
 	font-family: Typewriter;
 	font-weight: bold;
 	transition-duration: 0.2s;
 	cursor: pointer
 }
 .singularity:hover {
-    color: #1f1f1f;
-    background: white;
+    color: black;
+	box-shadow: inset 0 0 75px white;
+    border-color: #bbb;
 }
 
 /*SCRAPPED*/
@@ -198,6 +186,26 @@
 	border-color: #5f7f00;
 	color: #efffbf;
 	text-shadow: 0px 0px 3px #bfff00, 0px 0px 6px #bfff00;
+}
+
+.dark {
+	color: #7f7f7f;
+	text-shadow: 0px 0px 3px #3f3f3f, 0px 0px 3px #3f3f3f;
+	background: #000000;
+	box-shadow: inset 0px 0px 12px 0px #3f3f3f;
+	border: 2px solid #3f3f3f;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.dark:hover {
+	background: #3f3f3f;
+	box-shadow: inset 0px 0px 12px 0px #000000;
+	border-color: #000000;
+	color: #bfbfbf;
+	text-shadow: 0px 0px 3px #7f7f7f, 0px 0px 3px #7f7f7f;
 }
 
 .star {

@@ -192,3 +192,29 @@
 		background-position: 25% 100%;
 	}
 }
+
+.nil {
+	background: black;
+	border: 2px solid black;
+	border-radius: 4px;
+	color: black;
+	transition-duration: 0.2s;
+	animation: nil 4s linear infinite;
+}
+.nil:hover {
+	background: grey;
+	border-color: grey;
+	color: white;
+	cursor: pointer;
+}
+@keyframes nil {
+	0% {
+		text-shadow: 0 2px 0 #fff, 0 0 0 #fff;
+	}
+	50% {
+		text-shadow: 0 0 0 #fff, 0 -2px 0 #fff;
+	}
+	100% {
+		text-shadow: 0 2px 0 #fff, 0 0 0 #fff;
+	}
+}
