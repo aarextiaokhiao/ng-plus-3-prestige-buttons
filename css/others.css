@@ -1,21 +1,4 @@
-.placeholder1a {
-	background: linear-gradient(transparent, #FEF9BB, #FEF9BB, transparent, transparent), linear-gradient(transparent, transparent, transparent, transparent, #CAF575), linear-gradient(#FDF379, #FDF379);
-	border: 2px solid #9F9404;
-	color: rgba(0, 0, 0, 0.5);
-	font-family: Typewriter;
-	font-weight: bold;
-	border-radius: 4px;
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-.placeholder1a:hover {
-	border-color: #dfdfdf;
-	box-shadow: inset 0px 0px 24px 0px #ffffff;
-	color: #FDF379;
-	text-shadow: 0 0 3px #9F9404;
-}
-
-.placeholder1b {
+.placeholder1 {
 	background: linear-gradient(transparent, #A2F4FC, #A2F4FC, transparent, transparent), linear-gradient(transparent, transparent, transparent, transparent, #6D99F0), linear-gradient(#9AD7FC, #9AD7FC);
 	border: 2px solid #4B81F0;
 	color: rgba(0, 0, 0, 0.5);
@@ -25,7 +8,7 @@
 	transition-duration: 0.2s;
 	cursor: pointer;
 }
-.placeholder1b:hover {
+.placeholder1:hover {
 	border-color: #dfdfdf;
 	box-shadow: inset 0px 0px 24px 0px #ffffff;
 	color: #9AD7FC;

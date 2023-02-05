@@ -1,0 +1,110 @@
+body {
+    background-color: #00080f !important
+}
+* {
+    font-family:'IBM Plex Mono', monospace !important;
+}
+div {
+    color: #e5e5e5
+}
+
+button {
+	border: 2px solid;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #333;
+    color: #ccc;
+    border-color: #ccc
+}
+button:hover {
+	cursor: pointer
+}
+
+.galaxy {
+    background: linear-gradient(#06f, #99f) !important;
+    border-color: #3399ff !important;
+    text-shadow: 0px 0px 3px #000, 0px 0px 6px #000;
+    transition: 0.2s;
+    animation: galaxy 4s linear infinite;
+}
+.galaxy:hover {
+    box-shadow: inset 0px 0px 15px 0px #3ff;
+    font-weight:500;
+}
+@keyframes galaxy { 
+    0%{color: #9999ff;}
+    50% {color: #ffffff;}
+    100%{color: #9999ff;}
+}
+
+.infinity {
+    border-color: #e2bd00 !important;
+    background: linear-gradient(#ffcc00, #999900) !important;
+    text-shadow: 0px 0px 5px #ff0, 0px 0px 9px #fff !important;
+    transition: 0.2s;
+    animation: infinity 4s linear infinite
+}
+.infinity:hover {
+    box-shadow: inset 0px 0px 5px 2px #ff3000;
+}
+@keyframes infinity { 
+    0%{color: #000000;}
+    50% {color: #990000;}
+    100%{color: #000000;}
+}
+
+.eternity {
+    border-color: #7100e2 !important;
+    background:linear-gradient(#000033, #6600ff) !important;
+    text-shadow: 0px 0px 5px #f2f, 0px 0px 9px #000 !important;
+    transition: 0.2s;
+    animation: eternity 4s linear infinite
+}
+.eternity:hover {
+    background-color: #7100e2 !important;
+    box-shadow: inset 0px 0px 5px 2px #ff0099;
+}
+@keyframes eternity { 
+    0%{color: #9960ff;}
+    50% {color: #ffffff;}
+    100%{color: #9960ff;}
+}
+
+.quantum {
+    border-color: #009900 !important;
+    background:linear-gradient(#003300, #00cc00) !important;
+    text-shadow: 0px 0px 5px #000, 0px 0px 9px #0f0 !important;
+    transition: 0.2s;
+    animation: quantum 4s linear infinite
+}
+.quantum:hover {
+    box-shadow: inset 0px 0px 5px 2px #00ff00;
+}
+@keyframes quantum { 
+    0%{color: #00ffff;}
+    50% {color: #ffffff;}
+    100%{color: #00ffff;}
+}
+
+.funda {
+	background: linear-gradient(#0c0033, #2e0033) !important;
+    box-shadow: inset 0px 0px 5px 0px transparent !important;
+    border-radius: 0px;
+    border-color: #770077 !important;
+	text-shadow: none !important;
+    transition: 0.2s;
+    animation: funda 4s linear infinite
+}
+.funda:hover {
+    border-color: rgba(255,255,255,0.5) !important;
+    box-shadow: inset 0px 0px 5px 0px white !important;
+}
+@keyframes funda { 
+    0%{color: #ff0000;}
+    17% {color: #ffff00;}
+    33%{color: #00ff00;}
+    50%{color: #00ffff;}
+    67%{color: #0000ff;}
+    83%{color: #ff00ff;}
+    100%{color: #ff0000;}
+}

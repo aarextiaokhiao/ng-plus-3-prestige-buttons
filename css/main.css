@@ -1,6 +1,6 @@
 @font-face {
     font-family: Typewriter;
-    src: url('MonospaceTypewriter.ttf');
+    src: url('../MonospaceTypewriter.ttf');
 }
 button {
 	font-family: Typewriter;
@@ -40,12 +40,10 @@ h3 {
 	cursor: pointer
 }
 
-
 [ach-tooltip] {
     position: relative;
     z-index: 2
 }
-
 [ach-tooltip]:before,
 [ach-tooltip]:after {
     visibility: hidden;
@@ -56,7 +54,6 @@ h3 {
 	text-shadow: none !important;
     z-index: 2
 }
-
 [ach-tooltip]:before {
     position: absolute;
     top: 100%;
@@ -77,7 +74,6 @@ h3 {
     line-height: 1.2;
     transition-duration: .5s;
 }
-
 [ach-tooltip]:after {
     position: absolute;
     top: 100%;
@@ -93,7 +89,6 @@ h3 {
     line-height: 0;
     transition-duration: .5s;
 }
-
 [ach-tooltip]:hover:before,
 [ach-tooltip]:hover:after {
     visibility: visible;

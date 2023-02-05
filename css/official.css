@@ -73,7 +73,7 @@
 }
 
 .funda {
-	background: linear-gradient(#0c0033, #2e0033);
+	background: linear-gradient(#00002f, #0f002f), linear-gradient(45deg, black, transparent 25%, transparent), linear-gradient(-45deg, black, transparent 25%, transparent);
 	box-shadow: inset 0px 0px 24px 0px black;
 	border: 2px solid;
 	font-family: Typewriter;
@@ -88,19 +88,19 @@
 }
 @keyframes funda { 
 	0%{
-		border-color: #690072;
-		color: #e0ace5;
-		text-shadow: 0px 0px 3px white, 0px 0px 6px #d200e5;
+		border-color: #3f007f;
+		color: #bfbfdf;
+		text-shadow: 0px 0px 5px white, 0px 0px 6px #1f00ff;
 	}
 	50% {
-		border-color: #1c0072;
-		color: #baace5;
-		text-shadow: 0px 0px 6px white, 0px 0px 6px #3900e5;
+		border-color: #1f007f;
+		color: #efbfdf;
+		text-shadow: 0px 0px 6px white, 0px 0px 6px #3f00ff;
 	}
 	100%{
-		border-color: #690072;
-		color: #e0ace5;
-		text-shadow: 0px 0px 3px white, 0px 0px 6px #d200e5;
+		border-color: #3f007f;
+		color: #bfbfdf;
+		text-shadow: 0px 0px 5px white, 0px 0px 6px #1f00ff;
 	}
 }
 
@@ -141,6 +141,26 @@
 		color: #fbf;
 		text-shadow: -1px 0px 0px #f00, 0px 0px 0px #0f0, 1px 0px 0px #00f;
 	}
+}
+
+.star {
+	color: #730;
+	text-shadow: 0 0 3px #730;
+	background: radial-gradient(#ff7, #fb0);
+	background-size: 300% 300%;
+	background-position: 100% 100%;
+	border: 2px solid #f707;
+	font-family: Typewriter;
+	font-weight: bold;
+	border-radius: 4px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+.star:hover {
+	box-shadow: inset 0px 0px 24px 0px #ff3f00;
+	border-color: #ff3f00;
+	color: #ff6f3f;
+	text-shadow: 0 0 3px black, 0 0 6px #7f1f00;
 }
 
 .singularity {
@@ -206,26 +226,6 @@
 	border-color: #000000;
 	color: #bfbfbf;
 	text-shadow: 0px 0px 3px #7f7f7f, 0px 0px 3px #7f7f7f;
-}
-
-.star {
-	color: #7f3f00;
-	text-shadow: 0 0 3px transparent, 0 0 6px #ffdf7f;
-	background: radial-gradient(#ffbf00, #ff7f00);
-	background-size: 300% 300%;
-	background-position: 100% 100%;
-	border: 2px solid #ffbf00;
-	font-family: Typewriter;
-	font-weight: bold;
-	border-radius: 4px;
-	transition-duration: 0.2s;
-	cursor: pointer;
-}
-.star:hover {
-	box-shadow: inset 0px 0px 24px 0px #ff3f00;
-	border-color: #ff3f00;
-	color: #ff6f3f;
-	text-shadow: 0 0 3px black, 0 0 6px #7f1f00;
 }
 
 .galactic {
@@ -478,7 +478,7 @@
 .digitize {
 	color: #00ff00;
 	text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
-	background: url("images/digitize.png");
+	background: url("../images/digitize.png");
 	border: 2px solid #000000;
 	font-family: Typewriter;
 	font-weight: bold;
