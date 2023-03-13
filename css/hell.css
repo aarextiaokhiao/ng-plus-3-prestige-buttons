@@ -14,19 +14,21 @@
 }
 
 .paradox {
-	background: radial-gradient(#7f007f, #ff00ff);
-	border: 2px solid #ff00ff;
+	background: linear-gradient(45deg, #707, #000, #303);
+	background-size: 75% 200%;
+	background-position: 0 0;
+	box-shadow: 1px 1px 0 #f0f7, -1px -1px 0 #f0f7;
+
+	border: 2px solid #b0b;
 	border-radius: 4px;
-	color: #ff7fff;
-	text-shadow: 0px 0px 3px #000000, 0px 0px 6px #ff00ff;
+	color: #f7f;
 	font-family: Typewriter;
 	font-weight: bold;
 	transition-duration: 0.2s;
 	cursor: pointer
 }
 .paradox:hover {
-	box-shadow: inset 0px 0px 12px 0px #ff00ff;
-	text-shadow: 0px 0px 6px #000000, 0px 0px 6px #ff00ff
+	box-shadow: 3px 3px 0 #f0f7, -3px -3px 0 #f0f7, inset 0 0 12px 0 #f0f
 }
 
 .accelerate {
@@ -58,13 +60,14 @@
 }
 
 .interreality {
-	background: linear-gradient(90deg, #007f00, #000000, #003f7f);
+	background: linear-gradient(90deg, #007f00, #000000, #002f3f);
+	box-shadow: inset 0px 0px 12px 0px black;
+
 	border: 2px solid;
-	border-color: #007f00 #003f7f #003f7f #007f00;
+	border-color: #00bf00 #005fbf #005fbf #00bf00;
 	border-radius: 4px;
-	box-shadow: inset 0px 0px 12px 0px #000000;
+
 	color: #ffffff;
-	text-shadow: 0px 0px 3px #ffffff, 0px 0px 6px #ffffff;
 	font-family: Typewriter;
 	font-weight: bold;
 	transition-duration: 0.2s;
@@ -72,7 +75,6 @@
 }
 
 .interreality:hover {
-	border-color: #00bf00 #005fbf #005fbf #00bf00;
-	box-shadow: inset 0px 0px 12px 0px rgba(255, 255, 255, 0.5);
-	text-shadow: 0px 0px 6px #ffffff, 0px 0px 12px #ffffff;
+	border-color: #00ff00 #007fff #007fff #00ff00;
+	box-shadow: inset 0 0 12px 0 #007f00;
 }

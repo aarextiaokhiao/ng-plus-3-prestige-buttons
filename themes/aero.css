@@ -1,0 +1,150 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif !important;
+	letter-spacing: 0.5px;
+	font-weight: normal !important;
+}
+
+button {
+	font-size: 20px;
+	display: inline-block
+}
+
+body {
+	background: #070710;
+	color: #fff9 !important;
+}
+
+/*===============
+  B U T T O N S
+===============*/
+
+button {
+	transition-duration: .5s !important;
+	border-radius: 4px !important;
+	position: relative;
+	overflow: hidden
+}
+button:hover {
+	filter: brightness(2);
+	transition-duration: .1s !important;
+}
+button:hover:active {
+	filter: brightness(0.8) contrast(1.1);
+	transition-duration: 0s !important;
+}
+
+/*=============
+  L A Y E R S
+=============*/
+
+.galaxy {
+	background: 
+		linear-gradient(#114, #000) !important;
+	color: #99f !important;
+	border: 1px solid #557 !important;
+	box-shadow: inset 0 0 5px #99f3;
+}
+.galaxy:hover {
+	box-shadow: inset 0 0 5px #99f3, 0 0 8px #99f7;
+}
+.galaxy::before {
+	content: "γ";
+	top: -80px; left: 0; right: 0;
+	font-size: 6em;
+	font-weight: 100;
+	opacity: .1;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+
+.infinity {
+	background: linear-gradient(#420, #000) !important;
+	color: #fa7 !important;
+	border: 1px solid #765 !important;
+	box-shadow: inset 0 0 5px #fa73;
+}
+.infinity:hover {
+	box-shadow: inset 0 0 5px #fa73, 0 0 8px #fa77;
+}
+.infinity::before {
+	content: "∞";
+	top: -60px; left: 0; right: 0;
+	font-size: 6em;
+	font-weight: 100;
+	opacity: .1;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+
+.eternity {
+	background: linear-gradient(#204, #000) !important;
+	color: #caf !important;
+	border: 1px solid #657 !important;
+	box-shadow: inset 0 0 5px #caf3;
+}
+.eternity:hover {
+	box-shadow: inset 0 0 5px #caf3, 0 0 8px #caf7;
+}
+.eternity::before {
+	content: "Δ";
+	top: -60px; left: 0; right: 0;
+	font-size: 6em;
+	font-weight: 100;
+	opacity: .1;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+
+.quantum {
+	background: linear-gradient(#040, #000) !important;
+	color: #bf7 !important;
+	border: 1px solid #674 !important;
+	box-shadow: inset 0 0 5px #bf73;
+}
+.quantum:hover {
+	box-shadow: inset 0 0 5px #bf73, 0 0 8px #bf77;
+}
+.quantum::before {
+	content: "ᴨ";
+	top: -70px; left: 0; right: 0;
+	font-size: 6em;
+	font-weight: 100;
+	opacity: .1;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+
+.funda {
+	background: linear-gradient(#516, #100) !important;
+	color: #a4f !important;
+	text-shadow: 0 0 5px #a4f;
+	border: 1px solid #72f !important;
+	animation: fundaText 15s linear infinite !important;
+	box-shadow: inset 0 0 5px #7007;
+}
+.funda:hover {
+	box-shadow: inset 0 0 5px #7007, 0 0 8px #7f77;
+}
+.funda::before {
+	content: "φ";
+	top: -70px; left: 0; right: 0;
+	font-size: 6em;
+	font-weight: 100;
+	opacity: .1;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+@keyframes fundaText { 
+	from {
+		color: #a4f;
+		text-shadow: 0px 0px 3px #000, 0px 0px 3px #fff7, 0px 0px 8px #a4f7;
+	}
+	50% {
+		color: #f47;
+		text-shadow: 0px 0px 3px #000, 0px 0px 6px #fff7, 0px 0px 8px #f477;
+	}
+	to {
+		color: #a4f;
+		text-shadow: 0px 0px 3px #000, 0px 0px 3px #fff7, 0px 0px 8px #a4f7;
+	}
+}
